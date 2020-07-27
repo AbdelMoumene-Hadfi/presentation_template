@@ -7,6 +7,9 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 		<!--Custom Theme For more : https://revealjs.com/themes/-->
 		<link rel="stylesheet" href="dist/theme/black.css">
+		<!--appearance dependecy -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+		<link rel="stylesheet" href="plugin/appearance/appearance.css">
 
 	</head>
 	<body>
@@ -16,6 +19,11 @@
 				<!--Config transition For more : https://revealjs.com/transitions/ -->
 				<section data-transition="zoom">
 	  			<h2>This slide will override the presentation transition and zoom!</h2>
+						<ul>
+							<li class="animated bounceInLeft">Add it to any text element</li>
+							<li class="animated bounceInLeft">Like list items, or headers.</li>
+							<li class="animated bounceInLeft">It adds some attention.</li>
+						</ul>
 				</section>
 				<section data-transition="slide">
 	  			<h2>This slide will override the presentation transition and slide!</h2>
@@ -42,7 +50,7 @@
 		<script src="plugin/zoom/zoom.js"></script>
 		<script src="plugin/externalcode/externalcode.js"></script>
 		<script src="plugin/elapsed-time-bar/elapsed-time-bar.js"></script>
-
+		<script src="plugin/appearance/appearance.js"></script>
 		<script>
 			Reveal.initialize({
 				controls: true,
@@ -56,7 +64,7 @@
   			progressBarHeight: 3,
 				barColor: 'rgb(200,0,0)',
 				/* plugins to use */
-				plugins: [ElapsedTimeBar, Externalcode, RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+				plugins: [Appearance, ElapsedTimeBar, Externalcode, RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
 			});
 		</script>
 	</body>
