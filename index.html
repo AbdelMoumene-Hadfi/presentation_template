@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Title</title>
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+		<!--Custom Theme For more : https://revealjs.com/themes/-->
+		<link rel="stylesheet" href="../dist/theme/black.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-markdown="markdown/markdown.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+				<!--Config transition For more : https://revealjs.com/transitions/ -->
+				<section data-transition="zoom">
+	  			<h2>This slide will override the presentation transition and zoom!</h2>
+				</section>
+				<section data-transition="slide">
+	  			<h2>This slide will override the presentation transition and slide!</h2>
+				</section>
+				<section data-transition-speed="fast">
+	  			<h2>Choose from three transition speeds: default, fast or slow!</h2>
+					<!-- Add class notes For more : https://revealjs.com/speaker-view/ -->
+					<aside class="notes">
+    				Shhh, these are your private notes 📝
+  				</aside>
+				</section>
+				<section>
+					<pre class="language-python">
+						<code data-code="../code/python/pandas.py" data-line-numbers="|1|3-5|6|7-13|14|15-21|">
+						</code>
+					</pre>
+				</section>
+			</div>
+		</div>
+		<script src="../dist/reveal.js"></script>
+    <script src="../plugin/markdown/markdown.js"></script>
+    <script src="../plugin/highlight/highlight.js"></script>
+    <script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/zoom/zoom.js"></script>
+		<script src="../plugin/externalcode/externalcode.js"></script>
+		<script src="../plugin/elapsed-time-bar/elapsed-time-bar.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				/*Set slide number  For more : https://revealjs.com/slide-numbers/  */
+				slideNumber : true,
+				/*Set TimeBar For more : https://tkrkt.github.io/reveal.js-elapsed-time-bar/ */
+				allottedTime: 3 * 60 * 1000, // 3 minutes
+  			progressBarHeight: 3,
+				barColor: 'rgb(200,0,0)',
+				/* plugins to use */
+				plugins: [ElapsedTimeBar, Externalcode, RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+			});
+		</script>
+	</body>
+</html>
+<!-- NOTES :
++ Press »F« on your keyboard to view your presentation in fullscreen mode. Once in fullscreen mode, press the »ESC« key to exit.
+
+-->
